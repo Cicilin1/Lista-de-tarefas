@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Nunito&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #CCD5AE;
+    text-align: center;
+    height: auto;
+    transition: 0.4s;
+}
+
+/*Modo escuro*/
+body.dark-mode {
+    background-color: #000;
+    transition: 0.4s;
+}
+
+header {
+    background-color: #183D3D;
+    height: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+header h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.content {
+    padding-top: 6rem;
+    height: auto;
+    position: relative
+}
+
+#toggle-dark-mode {
+    display: flex;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+
+    user-select: none;
+}
+
+#toggle-dark-mode button {
+    /* background-color: 808080; */
+    border: none;
+    border-radius: 15px;
+    padding: 0.2rem 0.4rem;
+
+    font-weight: 600;
+}
+
+.container {
+    margin: 0 auto 25rem auto;
+    padding: 2rem 0;
+
+    height: auto;
+    width: 40rem;
+
+    border: none;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #fff;
+}
+
+.dark-mode .container {
+
+    background-color: #393E46;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    height: auto;
+
+    border-radius: 15px;
+}
+
+input {
+    background-color: #fff;
+    outline: none;
+
+    height: 3rem;
+    width: 15rem;
+
+    margin-right: 1rem;
+
+    border: none;
+
+    font-size: 1rem;
+    flex: 1;
+}
+
+.dark-mode input {
+    background-color: #393E46;
+    color: white;
+}
+
+
+.menu button {
+    display: flex;
+    border: none;
+    transition: 0.2s;
+
+    color: #fff;
+    font-size: 1rem;
+    background-color: #016A70;
+    opacity: 40%;
+
+    padding: 0.5rem;
+    border-radius: 7px;
+}
+
+.menu button:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.list-task {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+
+    margin: 1rem 0;
+}
+
+.task {
+    background-color: #CDD0CB;
+    margin: 1rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    padding: 1rem 1rem;
+
+    width: 95%;
+    height: auto;
+
+    list-style: none;
+}
+
+.list-task p {
+    max-width: 70%;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.list-task button {
+    background-color: transparent;
+    opacity: 30%;
+    border: none;
+}
+
+.list-task button:hover {
+    opacity: 100%;
+}
+
+.check img,
+.trash img {
+    height: 2rem;
+    cursor: pointer;
+
+}
+
+footer {
+    margin-top: 10rem;
+    padding: 1rem;
+    font-size: 1rem;
+
+    background-color: #161616;
+    color: #fff;
+
+    height: 12rem;
+}
+
+.dark-mode footer {
+    background-color: #272829;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+footer p {
+    padding-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials li {
+    margin: 0 2rem 0 0;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.socials li:hover {
+    background-color: #808080;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    width: 2rem;
+    display: flex;
+}
+
+/*Cor da lista depois de clicar em check*/
+.done {
+    background-color: #4E9F3D;
+    text-decoration: line-through;
+}
+
+
+@media screen and (max-width:730px) {
+
+
+    header img {
+        height: 1.5rem;
+        margin-right: 0.5rem;
+    }
+
+    header h1 {
+        font-family: 'Kanit', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .container {
+        margin: 0 auto 15rem auto;
+        padding: 1rem 0;
+
+        height: auto;
+        width: 90vw;
+
+        border: none;
+        border-radius: 15px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        background-color: #fff;
+    }
+
+    .menu {
+        width: 80vw;
+    }
+
+    input {
+        background-color: #fff;
+        outline: none;
+
+        height: 3rem;
+        width: 45vw;
+
+        margin-right: 1rem;
+
+        border: none;
+
+        font-size: 1rem;
+        flex: 1;
+    }
+
+
+    .list-task {
+        width: 100%;
+        height: auto;
+    }
+
+    .task {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+
+        padding: 1rem 0.4rem;
+
+        width: 90%;
+        height: auto;
+
+        list-style: none;
+    }
+
+    .task p {
+        padding: 0 0.5rem;
+    }
+
+
+    .check img,
+    .trash img {
+        height: 1.8rem;
+        cursor: pointer;
+
+    }
+}
+
+
+@media screen and (min-height:700px) {
+    .container {
+        margin: 0 auto 25rem auto;
+    }
+}
+
+@media screen and (min-height:900px) {
+    .container {
+        margin: 0 auto 60vh auto;
+    }
+
+    .content {
+        height: auto;
+    }
+}
+
+@media screen and (min-height:1000px) {
+    .content {
+        height: 60rem;
+    }
+}
