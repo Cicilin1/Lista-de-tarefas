@@ -8,13 +8,14 @@ const bodyElement = document.body
 
 let myListItems = []
 
+
 function addTask() {
-    myListItems.push({
+    myListItems.unshift({  // Use unshift() em vez de push()
         task: btninput.value,
         complete: false
-    })
+    });
     btninput.value = '';
-    showTask()
+    showTask();
 }
 
 function showTask() {

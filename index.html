@@ -15,14 +15,21 @@
         <h1>Lista de tarefas</h1>
     </header>
     <div class="content">
-        <div id="toggle-dark-mode"><button type="button">CLARO</button></div>
+        <div class="container-dark-mode">
+            <p class="text-dark">Claro</p>
+            <p class="text-light">Escuro</p>
+            <label>
+                <input type="checkbox" class="dark-input">
+                <div id="toggle-dark-mode"><button class="button"></button></div>
+            </label>
+        </div>
+
         <div class="container">
             <div class="menu">
                 <input id="inputTask" class="input-task" type="text" placeholder="Digite aqui a tarefa...">
                 <button type="button">ADICIONAR</button>
             </div>
             <ul class="list-task">
-
 
             </ul>
         </div>
