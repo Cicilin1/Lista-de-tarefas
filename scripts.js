@@ -6,16 +6,25 @@ const btnTrash = document.querySelector(".trash")
 const toggleButton = document.getElementById("toggle-dark-mode");
 const bodyElement = document.body
 
+const errorMessage = document.querySelector('.error-message')
+
 let myListItems = []
 
 
 function addTask() {
-    myListItems.unshift({  // Use unshift() em vez de push()
-        task: btninput.value,
-        complete: false
-    });
-    btninput.value = '';
-    showTask();
+    const inputValue = btninput.value.trim();
+
+    if (inputValue !== '') {
+        myListItems.unshift({
+            task: inputValue,
+            complete: false
+        });
+        btninput.value = '';
+        showTask();
+        errorMessage.textContent = '';
+    } else {
+        errorMessage.textContent = 'Por favor, preencha o campo acima';
+    }
 }
 
 function showTask() {

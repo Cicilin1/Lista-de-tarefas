@@ -47,6 +47,11 @@ header h1 {
     position: relative
 }
 
+.error-message{
+    padding-top: 0.5rem;
+    color: red;
+}
+
 .container-dark-mode{
     position: absolute;
     top: 0.3rem;
