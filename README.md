@@ -1,6 +1,6 @@
 # 📋 Projeto To-Do List
 
-![To-Do List](./screenshots/print)
+![To-Do List](./screenshots/print.png)
 
 O Projeto To-Do List é uma aplicação simples para ajudar a manter o controle das suas tarefas diárias. Com esta aplicação, você pode adicionar, verificar e excluir tarefas facilmente.
 
