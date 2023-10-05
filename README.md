@@ -27,8 +27,3 @@ O Projeto To-Do List é uma aplicação simples para ajudar a manter o controle 
 - CSS: Para estilização.
 - JavaScript: Para funcionalidades interativas.
 
-## Como Funciona
-
-A aplicação utiliza JavaScript para adicionar e remover tarefas dinamicamente na página. As informações sobre as tarefas são armazenadas em um array JavaScript, e o estado da aplicação é salvo no armazenamento local do navegador para persistência entre sessões.
-
-Para executar a aplicação, basta abrir o arquivo HTML no seu navegador.
