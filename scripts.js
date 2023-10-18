@@ -2,6 +2,7 @@ const btnAdd = document.querySelector('.menu button')
 const btninput = document.querySelector('#inputTask')
 const listTask = document.querySelector('.list-task')
 const btnTrash = document.querySelector(".trash")
+const btnEditText = document.querySelector('li')
 
 const toggleButton = document.getElementById("toggle-dark-mode");
 const bodyElement = document.body
@@ -40,7 +41,7 @@ function showTask() {
         `
     })
 
-    listTask.innerHTML = newArray
+    listTask.innerHTML = newArrays
 
     localStorage.setItem('list', JSON.stringify(myListItems))
 }
