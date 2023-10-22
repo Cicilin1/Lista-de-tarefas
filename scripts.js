@@ -41,7 +41,7 @@ function showTask() {
         `
     })
 
-    listTask.innerHTML = newArrays
+    listTask.innerHTML = newArray
 
     localStorage.setItem('list', JSON.stringify(myListItems))
 }
